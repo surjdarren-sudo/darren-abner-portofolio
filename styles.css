@@ -8,7 +8,7 @@
   --accent-hover:#08553D;
   --nav-h:64px;
 }
- 
+
 *{ box-sizing:border-box; }
 html{
   scroll-behavior:smooth;
@@ -33,7 +33,7 @@ h1,h2,h3,h4{
 a{ color:var(--accent); text-decoration:none; }
 a:hover{ color:var(--accent-hover); }
 .container-narrow{ max-width:1040px; margin:0 auto; padding:0 1.25rem; }
- 
+
 /* ---------- Navbar ---------- */
 .site-nav{
   position:fixed; top:0; left:0; right:0; z-index:1000;
@@ -58,7 +58,7 @@ a:hover{ color:var(--accent-hover); }
   display:none; background:none; color:var(--ink);
   border:1px solid var(--line); border-radius:6px; padding:.4rem .55rem;
 }
- 
+
 /* ---------- Hero ---------- */
 .hero{
   padding:calc(6.5rem + env(safe-area-inset-top,0px)) 0 4rem;
@@ -89,7 +89,7 @@ a:hover{ color:var(--accent-hover); }
   color:var(--ink-soft); max-width:58ch; margin-bottom:1.75rem;
 }
 .hero-cta{ display:flex; flex-wrap:wrap; gap:.7rem; margin-bottom:1.75rem; }
- 
+
 .btn-blue,
 .btn-outline-light2{
   display:inline-flex; align-items:center; gap:.5rem;
@@ -100,11 +100,11 @@ a:hover{ color:var(--accent-hover); }
 .btn-blue:hover{ background:var(--accent-hover); border-color:var(--accent-hover); color:#fff; }
 .btn-outline-light2{ background:transparent; border:1px solid var(--ink); color:var(--ink); }
 .btn-outline-light2:hover{ background:var(--ink); color:#fff; }
- 
+
 .contact-row{ display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; font-size:.9rem; color:var(--ink-soft); }
 .contact-row span{ display:inline-flex; align-items:center; gap:.45rem; }
 .contact-row svg{ flex:0 0 auto; }
- 
+
 .id-card .photo-wrap{
   width:100%; aspect-ratio:1/1; border-radius:4px; overflow:hidden;
   background:var(--bg-alt); margin-bottom:1rem;
@@ -119,7 +119,7 @@ a:hover{ color:var(--accent-hover); }
 }
 .id-facts .fact-label{ color:var(--ink-soft); }
 .id-facts .fact-val{ font-weight:600; text-align:right; }
- 
+
 /* ---------- Section umum ---------- */
 section{ padding:4rem 0; }
 .alt-bg{ background:var(--bg-alt); }
@@ -127,13 +127,13 @@ section{ padding:4rem 0; }
 .section-kicker{ display:none; }
 .section-head h2{ font-size:clamp(1.6rem,3vw,2.1rem); margin-bottom:.6rem; }
 .section-head p{ color:var(--ink-soft); margin:0; }
- 
+
 /* ---------- Kompetensi ---------- */
 .rel-card{ border-top:2px solid var(--ink); padding-top:1.1rem; height:100%; }
 .rel-card .rel-icon{ color:var(--accent); margin-bottom:.7rem; }
 .rel-card h3{ font-size:1.08rem; margin-bottom:.4rem; }
 .rel-card p{ font-size:.94rem; color:var(--ink-soft); margin:0; }
- 
+
 /* ---------- Pendidikan & skill ---------- */
 .edu-card{
   display:flex; justify-content:space-between; gap:1.5rem; flex-wrap:wrap;
@@ -143,7 +143,7 @@ section{ padding:4rem 0; }
 .edu-card .edu-sub{ color:var(--ink-soft); }
 .edu-meta{ text-align:right; font-size:.9rem; color:var(--ink-soft); }
 .edu-meta strong{ display:block; color:var(--ink); }
- 
+
 .skill-group h3{ font-size:1rem; margin-bottom:.8rem; }
 .chip-row{ display:flex; flex-wrap:wrap; gap:.5rem; }
 .chip{
@@ -151,18 +151,29 @@ section{ padding:4rem 0; }
   padding:.28rem .65rem; font-size:.86rem; background:transparent;
 }
 .chip.soft{ border-color:var(--accent); color:var(--accent); }
- 
+
 /* ---------- Proyek ---------- */
 .proj-card{ height:100%; padding:1.4rem 0 1.6rem; border-top:1px solid var(--ink); }
 .proj-num{ display:none; }
 .proj-card h3{ font-size:1.25rem; margin-bottom:.2rem; }
 .proj-tagline{ color:var(--accent); font-size:.92rem; font-weight:600; margin-bottom:.8rem; }
-.proj-tags{ display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1rem; }
+.proj-tags{ display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.1rem; }
 .proj-tags span{
   border:1px solid var(--line); border-radius:4px;
   padding:.1rem .5rem; font-size:.8rem; color:var(--ink-soft);
 }
 .proj-card p{ font-size:.94rem; color:var(--ink-soft); margin-bottom:.9rem; }
+
+/* STAR breakdown (Situation / Task / Action / Result) */
+.proj-star{ display:grid; gap:.85rem; margin-bottom:1.1rem; }
+.proj-star-block strong{
+  display:block; font-size:.72rem; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--accent); margin-bottom:.25rem;
+}
+.proj-star-block p{ margin:0; font-size:.9rem; color:var(--ink-soft); }
+.proj-star-block ul{ margin:0; padding-left:1.1rem; font-size:.9rem; color:var(--ink-soft); }
+.proj-star-block ul li{ margin-bottom:.3rem; }
+
 .proj-role{
   border-left:3px solid var(--accent); padding-left:.85rem;
   font-size:.92rem; margin-bottom:1rem;
@@ -170,7 +181,7 @@ section{ padding:4rem 0; }
 .proj-role strong{ display:block; font-size:.85rem; margin-bottom:.1rem; }
 .proj-links{ display:flex; flex-wrap:wrap; gap:1rem; }
 .proj-links a{ font-size:.9rem; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
- 
+
 /* ---------- Pengalaman ---------- */
 .tl-item{
   display:grid; grid-template-columns:190px 1fr; gap:1.6rem;
@@ -181,7 +192,20 @@ section{ padding:4rem 0; }
 .tl-role{ color:var(--accent); font-size:.92rem; font-weight:600; margin-bottom:.7rem; }
 .tl-body ul{ margin:0; padding-left:1.15rem; color:var(--ink-soft); font-size:.94rem; }
 .tl-body ul li{ margin-bottom:.4rem; }
- 
+
+.tl-gallery{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:.5rem; margin-top:1rem;
+}
+.tl-gallery img{
+  width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:4px;
+  border:1px solid var(--line); display:block;
+}
+.tl-gallery.tl-gallery-1{ grid-template-columns:minmax(160px,280px); }
+@media (max-width:560px){
+  .tl-gallery{ grid-template-columns:repeat(2,1fr); }
+  .tl-gallery.tl-gallery-1{ grid-template-columns:minmax(140px,1fr); }
+}
+
 .highlight-card{
   background:var(--bg-alt); border-left:4px solid var(--accent);
   padding:1.4rem 1.6rem; margin-bottom:1.2rem;
@@ -190,16 +214,16 @@ section{ padding:4rem 0; }
 .highlight-card h3{ font-size:1.1rem; margin-bottom:.2rem; }
 .highlight-card .hc-role{ color:var(--accent); font-size:.9rem; font-weight:600; margin-bottom:.5rem; }
 .highlight-card p{ margin:0; color:var(--ink-soft); max-width:60ch; }
- 
+
 .simple-card{ padding:1.2rem 0; border-top:1px solid var(--line); }
 .simple-card h3{ font-size:1.02rem; margin-bottom:.15rem; }
 .simple-card .sc-role{ color:var(--accent); font-size:.88rem; font-weight:600; margin-bottom:.4rem; }
 .simple-card p{ font-size:.94rem; color:var(--ink-soft); margin:0; }
- 
+
 /* ---------- Sertifikasi & kompetisi ---------- */
 .cert-card{
-  display:flex; flex-direction:column; height:100%;
-  background:var(--bg); border:1px solid var(--line); border-radius:6px; overflow:hidden;
+  background:var(--bg); border:1px solid var(--line); border-radius:6px;
+  overflow:hidden; height:100%; display:flex; flex-direction:column;
 }
 .cert-img-wrap{ background:var(--bg-alt); border-bottom:1px solid var(--line); }
 .cert-img-wrap img{ display:block; width:100%; aspect-ratio:4/3; object-fit:cover; }
@@ -207,12 +231,12 @@ section{ padding:4rem 0; }
 .cert-body h3{ font-size:1.02rem; margin-bottom:.2rem; }
 .cert-issuer{ color:var(--accent); font-size:.88rem; font-weight:600; margin-bottom:.5rem; }
 .cert-body p{ flex:1; margin:0; font-size:.9rem; color:var(--ink-soft); }
- 
+
 .comp-card{ height:100%; padding-top:1.1rem; border-top:2px solid var(--ink); }
 .comp-rank{ display:block; color:var(--accent); font-size:.9rem; font-weight:700; margin-bottom:.4rem; }
 .comp-card h3{ font-size:1.08rem; margin-bottom:.5rem; }
 .comp-card p{ font-size:.94rem; color:var(--ink-soft); margin:0; }
- 
+
 /* ---------- Footer ---------- */
 footer{
   background:var(--bg-alt); border-top:1px solid var(--line);
@@ -226,11 +250,11 @@ footer p.lead-text{ color:var(--ink-soft); max-width:56ch; margin-bottom:1.5rem;
   border-top:1px solid var(--line); padding-top:1.3rem;
   font-size:.86rem; color:var(--ink-soft);
 }
- 
+
 /* ---------- Umum ---------- */
 ::selection{ background:var(--accent); color:#fff; }
 :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
- 
+
 /* ---------- Responsif ---------- */
 @media (max-width:900px){
   .hero-grid{ grid-template-columns:1fr; gap:2.5rem; }
@@ -261,4 +285,3 @@ footer p.lead-text{ color:var(--ink-soft); max-width:56ch; margin-bottom:1.5rem;
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
 }
- 
